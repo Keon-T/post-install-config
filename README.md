@@ -33,6 +33,19 @@ This tutorial outlines the post-install configuration of the open-source help de
 <img src="https://i.imgur.com/84oSCmk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>Configuring roles grouping permissions to users on admin access panel
+
+  Configure Roles (for grouping permissions)
+Admin Panel -> Agents -> Roles
+Supreme Admin
+
+Configure Departments (Ticket Visibility, Help Desk vs SysAdmins, vs Networking)
+Admin Panel -> Agents -> Departments
+SysAdmins
+
+Configure Teams
+Admin Panel -> Agents -> Teams (Pull Agents from different Departments)
+Online Banking
+
 </p>
 <br />
 
@@ -41,6 +54,22 @@ This tutorial outlines the post-install configuration of the open-source help de
 </p>
 <p>
 Admin Panel -> Settings -> User Settings then check Registration Required, login to create tickets Require registration 
+
+  Allow anyone to create tickets
+Admin Panel -> Settings -> User Settings (UNCHECK: unregistered users can create tickets)
+Registration Required: Require registration and login to create tickets 
+
+Configure Agents (workers)
+Admin Panel -> Agents -> Add New
+Jane (Dept: SysAdmins)
+John (Dept: Support)
+
+Configure Users (customers)
+Agent Panel -> Users -> Add New
+Karen
+Ken
+
+
 </p>
 <br />
 
@@ -51,4 +80,12 @@ Admin Panel -> Settings -> User Settings then check Registration Required, login
 
 
 Service Level Agreement (sla) how much time there is to respond/complete tickets in admin panel. Go to schedule department creating 3 different sla with 3 different grace periods</p>
+
+Configure SLA
+Admin Panel -> Manage -> SLA
+Sev-A (Grace Period: 1 hour, Schedule: 24/7)
+Sev-B (Grace Period: 4 hours, Schedule: 24/7)
+Sev-C (Grace Period: 8 hours, Business Hours)
+
+
 <br />
